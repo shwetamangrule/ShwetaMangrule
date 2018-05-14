@@ -9,6 +9,7 @@ public class Main {
 		System.out.println("Assignments");
 		System.out.println("1.Print Generic Array");
 		System.out.println("2.Power Calculator");
+		System.out.println("3.Check Palindrom");
 		
 		System.out.println("Please Select:");
 		int choice = sc.nextInt();
@@ -32,6 +33,11 @@ public class Main {
 				}
 				System.out.println(result);
 			}
+			break;
+		case 3:
+			System.out.println("Please Enter number");
+			int number =sc.nextInt();
+			System.out.println(IntegerPalindromCheck.check(number));
 			break;
 		default:
 			System.out.println("Invalid Choice");
