@@ -10,9 +10,10 @@ public class Main {
 		System.out.println("1.Print Generic Array");
 		System.out.println("2.Power Calculator");
 		System.out.println("3.Check Palindrom");
+		System.out.println("4.Reverse String Order");
 		
 		System.out.println("Please Select:");
-		int choice = sc.nextInt();
+		int choice =Integer.parseInt(sc.nextLine());
 		switch(choice) {
 		case 1:
 			Integer[] arr1 = {1,2,3};
@@ -38,6 +39,15 @@ public class Main {
 			System.out.println("Please Enter number");
 			int number =sc.nextInt();
 			System.out.println(IntegerPalindromCheck.check(number));
+			break;
+		case 4:
+			System.out.println("Please Enter a String:");
+			String s = sc.nextLine();
+			String revString = "";
+			for(int i = s.length()-1 ; i >= 0;i--) {
+				revString += s.charAt(i);
+			}
+			System.out.println(revString);
 			break;
 		default:
 			System.out.println("Invalid Choice");
