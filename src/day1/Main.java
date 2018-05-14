@@ -8,9 +8,9 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Assignments");
 		System.out.println("1.Print Generic Array");
+		System.out.println("2.Power Calculator");
 		
-		
-		
+		System.out.println("Please Select:");
 		int choice = sc.nextInt();
 		switch(choice) {
 		case 1:
@@ -18,6 +18,23 @@ public class Main {
 			String[] arr2 = {"Hello","World"};
 			GenericArrayPrinter.printArray(arr1);
 			GenericArrayPrinter.printArray(arr2);
+			break;
+		case 2:
+			while(sc.hasNextInt()) {
+				int a = sc.nextInt();
+				int b = sc.nextInt();
+				long result = 0;
+				try {
+					result = Calculator.power(a,b);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				System.out.println(result);
+			}
+			break;
+		default:
+			System.out.println("Invalid Choice");
 		}
 		
 		sc.close();
