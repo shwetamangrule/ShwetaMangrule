@@ -41,7 +41,7 @@ public class Main {
 		case 3:
 			System.out.println("Please Enter number");
 			int number =sc.nextInt();
-			System.out.println(IntegerPalindromCheck.check(number));
+			System.out.println(PalindromCheck.check(number));
 			break;
 		case 4:
 			System.out.println("Please Enter a String:");
