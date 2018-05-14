@@ -11,7 +11,10 @@ public class Main {
 		System.out.println("2.Power Calculator");
 		System.out.println("3.Check Palindrom");
 		System.out.println("4.Reverse String Order");
-		
+		System.out.println("5. Check Odd With Lambda");
+		System.out.println("6.Check Prime With Lambda");
+		System.out.println("7.Check Palindrom with Lambda");
+		PerformOperation operation = new PerformOperation();
 		System.out.println("Please Select:");
 		int choice =Integer.parseInt(sc.nextLine());
 		switch(choice) {
@@ -48,6 +51,21 @@ public class Main {
 				revString += s.charAt(i);
 			}
 			System.out.println(revString);
+			break;
+		case 5:
+			System.out.println("Enter a number:");
+			int numOdd = sc.nextInt();
+			System.out.println(operation.isOdd(numOdd));
+			break;
+		case 6:
+			System.out.println("Enter a number:");
+			int numPrime = sc.nextInt();
+			System.out.println(operation.isPrime(numPrime));
+			break;
+		case 7:
+			System.out.println("Enter a number:");
+			int numPalindrom = sc.nextInt();
+			System.out.println(operation.isPalindrom(numPalindrom));
 			break;
 		default:
 			System.out.println("Invalid Choice");
