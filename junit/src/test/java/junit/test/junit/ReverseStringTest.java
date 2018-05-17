@@ -12,7 +12,7 @@ public class ReverseStringTest {
   @Test
   public void revString()
   {
-    assertEquals("condition failed", "ih reht", jr.revString1("hi there!"));
+    assertEquals("condition failed", "ih !ereht ", jr.revString1("hi there!"));
   }
 
 }

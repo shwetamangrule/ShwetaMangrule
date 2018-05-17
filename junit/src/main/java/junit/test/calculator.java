@@ -2,6 +2,7 @@ package junit.test;
 
 import java.util.Scanner;
 
+@SuppressWarnings("PMD.AtLeastOneConstructor")
 public class calculator {
 
 	
