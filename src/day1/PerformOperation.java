@@ -37,6 +37,7 @@ public class PerformOperation {
 		
 		// Operation1 operation1 = (num) ->{
 		Operation operation = () -> {
+			System.out.println("palindrome");
 			
 			int number = num;
 			int sum = 0; //temp=0 ;
@@ -50,6 +51,7 @@ public class PerformOperation {
 				return true;
 			}
 			return false;
+
 			
 		};
 		
