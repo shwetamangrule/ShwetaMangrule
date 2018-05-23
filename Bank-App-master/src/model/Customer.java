@@ -14,6 +14,8 @@ public class Customer {
 	private String lastName;
 	private List<Account> accounts;
 	private int custId;
+	private Address address;
+	private CustomerContact customerContact;
 	
 	
 	/**
@@ -21,11 +23,13 @@ public class Customer {
 	 * @param lastName
 	 * @param firstName
 	 */
-	public Customer(int custId, String lastName, String firstName) {
+	public Customer(int custId, String lastName, String firstName, Address address,CustomerContact customerContact) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.custId = custId;
+		this.address = address;
+		this.customerContact = customerContact;
 		this.accounts = new ArrayList<>();
 	}
 	public int getCustId() {

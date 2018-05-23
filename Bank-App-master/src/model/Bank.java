@@ -16,10 +16,10 @@ public class Bank {
 	private List<Customer>customers;
 	
 	/**
-	 * @param bankName
+	 * @param string 
 	 * @param customers
 	 */
-	public Bank(String bankName) {
+	public Bank(String string) {
 		super();
 		this.bankName = bankName;
 		this.customers = new ArrayList<>();

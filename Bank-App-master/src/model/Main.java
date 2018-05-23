@@ -18,7 +18,7 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		Bank bank = new Bank("Axis Bank");
-		Customer customer = new Customer(121,"Shrey","Naygandi");
+		Customer customer = new Customer(121,"Shrey","Naygandi", null, null);
 		Account account1 = new Account(10000.00f, 4.5f, 12, 100);
 		Account account2 = new Account(12200.00f, 5.5f, 6, 200);
 		customer.addAccount(account1);
