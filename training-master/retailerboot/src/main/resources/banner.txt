@@ -1,6 +1,0 @@
-${Ansi.RED}                   $$$$       $$      $$    $$     $$     $$    $$$    $$
-${Ansi.GREEN}                    $$        $$      $$    $$     $$     $$    $$ $   $$
-${Ansi.BLUE}                    $$        $$      $$    $$$$$$$$$     $$    $$  $  $$
-${Ansi.RED}                    $$          $$$$$$      $$     $$     $$    $$   $$$
-
-${Ansi.RED} :: Spring Boot${spring-boot.formatted-version} :: ${Ansi.DEFAULT}
